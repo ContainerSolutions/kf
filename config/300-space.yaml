@@ -525,6 +525,12 @@ spec:
                         - type: integer
                         - type: string
                       x-kubernetes-int-or-string: true
+                    terminationGracePeriodSeconds:
+                      description: Optional duration in seconds the pod needs to terminate gracefully.
+                      anyOf:
+                        - type: integer
+                        - type: string
+                      x-kubernetes-int-or-string: true
                     env:
                       description: Env sets default environment variables on kf applications for the whole space.
                       type: array

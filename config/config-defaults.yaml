@@ -158,6 +158,9 @@ data:
     appCPUPerGBOfRAM: "100m"
     # Absolute minimum amount of CPU to give an app. Expressed as a Kubernetes quantity.
     appCPUMin: "100m"
+    # Optional duration in seconds the pod needs to terminate gracefully.
+    terminationGracePeriodSeconds: "30"
+
 
     # The following images are used to execute builds. They SHOULD NOT be
     # modified except in rare circumstances.
@@ -227,4 +230,5 @@ data:
     enable_appdevexperience_builds: false
   appCPUPerGBOfRAM: "100m"
   appCPUMin: "100m"
+  terminationGracePeriodSeconds: "30"
 
